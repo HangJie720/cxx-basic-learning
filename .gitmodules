@@ -1,0 +1,6 @@
+[submodule "cpp/CppPrimer"]
+	path = cpp/CppPrimer
+	url = https://github.com.cnpmjs.org/pezy/CppPrimer.git
+[submodule "cpp/Cpp-Primer"]
+	path = cpp/Cpp-Primer
+	url = https://github.com.cnpmjs.org/Mooophy/Cpp-Primer.git
