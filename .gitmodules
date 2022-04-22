@@ -4,3 +4,6 @@
 [submodule "cpp/Cpp-Primer"]
 	path = cpp/Cpp-Primer
 	url = https://github.com/Mooophy/Cpp-Primer.git
+[submodule "cuda/cuda-debug-case"]
+	path = cuda/cuda-debug-case
+	url = ssh://git@bitbucket.iluvatar.ai:7999/swfw/cuda-debug-case.git
