@@ -66,3 +66,19 @@ void __global__ test_warp_primitives(void)
     if (tid == 0) printf("\n");
 }
 
+
+/*
+threadIdx.x:  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+lane_id:      0  1  2  3  4  5  6  7  0  1  2  3  4  5  6  7
+FULL_MASK = ffffffff
+mask1     = fffe
+mask2     = 1
+all_sync (FULL_MASK): 0
+all_sync     (mask1): 1
+any_sync (FULL_MASK): 1
+any_sync     (mask2): 0
+shfl:       2  2  2  2  2  2  2  2 10 10 10 10 10 10 10 10
+shfl_up:    0  0  1  2  3  4  5  6  8  8  9 10 11 12 13 14
+shfl_down:  1  2  3  4  5  6  7  7  9 10 11 12 13 14 15 15
+shfl_xor:   1  0  3  2  5  4  7  6  9  8 11 10 13 12 15 14
+*/

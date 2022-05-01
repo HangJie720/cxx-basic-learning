@@ -103,7 +103,11 @@
         "compare": "cpp",
         "ios": "cpp",
         "locale": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "__functional_base": "cpp",
+        "__memory": "cpp",
+        "filesystem": "cpp",
+        "__atomic": "cpp"
     },
     "git.ignoreLimitWarning": true
 }
