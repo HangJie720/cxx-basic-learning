@@ -7,3 +7,6 @@
 [submodule "cuda/cuda-debug-case"]
 	path = cuda/cuda-debug-case
 	url = ssh://git@bitbucket.iluvatar.ai:7999/swfw/cuda-debug-case.git
+[submodule "cuda/cuda-samples"]
+	path = cuda/cuda-samples
+	url = https://github.com/NVIDIA/cuda-samples.git
