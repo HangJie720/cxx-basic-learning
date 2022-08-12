@@ -10,3 +10,6 @@
 [submodule "cuda/cuda-samples"]
 	path = cuda/cuda-samples
 	url = https://github.com/NVIDIA/cuda-samples.git
+[submodule "llvm/Learn-LLVM-12"]
+	path = llvm/Learn-LLVM-12
+	url = https://github.com/PacktPublishing/Learn-LLVM-12.git
