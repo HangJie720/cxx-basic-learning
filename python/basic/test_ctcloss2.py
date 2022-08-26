@@ -1,0 +1,12 @@
+import torch.nn
+ctc_loss = torch.nn.CTCLoss()
+log_probs = torch.FloatTensor([[[0.2, 0.2], [0.2, 0.2]]]).transpose(0, 1).contiguous()
+targets = torch.IntTensor([0,1])
+input_lengths = torch.IntTensor([2])
+target_lengths = torch.IntTensor([2])
+device = torch.device('cpu')
+loss = ctc_loss(log_probs, targets, input_lengths, target_lengths).to(device)
+# print(loss)
+device = torch.device('cuda')
+loss = ctc_loss(log_probs.cuda(), targets, input_lengths, target_lengths).to(device)
+# print(loss)

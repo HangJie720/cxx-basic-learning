@@ -13,3 +13,6 @@
 [submodule "llvm/Learn-LLVM-12"]
 	path = llvm/Learn-LLVM-12
 	url = https://github.com/PacktPublishing/Learn-LLVM-12.git
+[submodule "python/framework-tests"]
+	path = python/framework-tests
+	url = ssh://git@bitbucket.iluvatar.ai:7999/swfw/framework-tests.git
