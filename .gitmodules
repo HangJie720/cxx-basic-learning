@@ -16,3 +16,6 @@
 [submodule "python/framework-tests"]
 	path = python/framework-tests
 	url = ssh://git@bitbucket.iluvatar.ai:7999/swfw/framework-tests.git
+[submodule "cuda/code-samples"]
+	path = cuda/code-samples
+	url = https://github.com/NVIDIA-developer-blog/code-samples.git
