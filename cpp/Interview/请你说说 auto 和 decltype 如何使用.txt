@@ -1,4 +1,0 @@
-问：请你说说 auto 和 decltype 如何使用
-答： 1. auto 实现自动类型推断，要求进行显示初始化，让编译器能够将变量的类型设置为初始值的类型： auto a = 12; auto pt = &a; double fm(double a, int b) { return a + b; } auto pf = fm; 
-简化模板声明 for(std::initializer_list<double>::iterator p = il.begin(); p != il.end(); p++) for(auto p = il.begin(); p != il.end(); p++) 
-2. decltype decltype 将变量的类型声明为表达式指定的类型。 decltype(expression) var; decltype(x) y; // 让y的类型与x相同，x是一个表达式 double x; int n; decltype(x*n) q; decltype(&x) pd; template<typename t=""> void ef(T t, U u) { decltype(T*U) tu; }</typename></double>
