@@ -1,6 +1,12 @@
 /*
 替换空格
 */
+#include <iostream>
+#include <algorithm>  
+#include <string>  
+
+using namespace std;
+
 class Solution {
 public:
     /**
@@ -21,15 +27,15 @@ public:
         return s;
     }
 };
-方法2：
-string replaceSpace(string s) {
+// 方法2：
+string replaceSpace1(string s) {
         unsigned long pos; 
         while((pos = s.find(" ")) != string::npos)
             s.replace(pos,1,"%20");
         return s;
     }
-方法3：
-string replaceSpace(string s) {
+// 方法3：
+string replaceSpace2(string s) {
         // write code here
         int index;
         while(s.find(" ") != -1){
@@ -40,3 +46,10 @@ string replaceSpace(string s) {
          
          
     }
+  
+int main() {  
+    std::string str = "Hello World!";  
+    std::replace(str.begin(), str.end(), ' ', '_');  
+    std::cout << str << std::endl;  
+    return 0;  
+}

@@ -1,54 +1,69 @@
 /*
 用两个栈实现队列
 */
-class Solution
-{
-public:
-    void push(int node) {
-        stack1.push(node);
-    }
 
-    int pop() {
-        if (stack2.empty()){
-            while(!stack1.empty()){
-                stack2.push(stack1.top());
-                stack1.pop();
-            }
-        }
-        int res = stack2.top();
-        stack2.pop();
-        return res;
-    }
+#include <iostream>  
+#include <queue>  
+#include <stack>  
+  
+using namespace std;  
+  
 
-private:
-    stack<int> stack1;
-    stack<int> stack2;
+#include <iostream>  
+#include <stack>  
+  
+using namespace std;  
+  
+class MyQueue {  
+public:  
+    MyQueue() {}  
+  
+    void push(int x) {  
+        while (!s1.empty()) {  
+            s2.push(s1.top());  
+            s1.pop();  
+        }  
+        s1.push(x);  
+        while (!s2.empty()) {  
+            s1.push(s2.top());  
+            s2.pop();  
+        }  
+    }  
+  
+    int pop() {  
+        int x = s1.top();  
+        s1.pop();  
+        return x;  
+    }  
+  
+    int peek() {  
+        return s1.top();  
+    }  
+  
+    bool empty() {  
+        return s1.empty();  
+    }  
+  
+private:  
+    stack<int> s1, s2;  
 };
-// 方法2：
-class Solution
-{
-public:
-    void push(int node) {
-       while(!stack1.empty())//1压入2
-        {
-            stack2.push(stack1.top());
-            stack1.pop();
-        }
-        stack2.push(node);
-    }
- 
-    int pop() {
-         while(!stack2.empty())//1压入2
-        {
-            stack1.push(stack2.top());
-            stack2.pop();
-        }
-        int value=stack1.top();
-        stack1.pop();
-        return value;
-    }
- 
-private:
-    stack<int> stack1;
-    stack<int> stack2;
-};
+
+
+int main() {  
+    // queue<int> q;  
+    MyQueue q;
+  
+    // 插入元素  
+    q.push(10);  
+    q.push(20);  
+    q.push(30);  
+  
+    // 输出队列元素  
+    while (!q.empty()) {  
+        cout << q.pop() << " ";  
+        // q.pop();  
+    }  
+    cout << endl;  
+  
+    return 0;  
+}

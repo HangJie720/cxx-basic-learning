@@ -1,6 +1,12 @@
 /*
 旋转数组的最小数字
 */
+
+#include <iostream>  
+#include <vector>  
+
+using namespace std;
+
 class Solution {
 public:
     int minNumberInRotateArray(vector<int> rotateArray) {
@@ -18,8 +24,8 @@ public:
         return rotateArray[right];
     }
 };
-方法2：
-class Solution {
+// 方法2：
+class Solution1 {
 public:
     int minNumberInRotateArray(vector<int> arr) {
         //假设一个数组的最小值为数组第一个数字
@@ -33,3 +39,11 @@ public:
     }
 };
 
+int main() {  
+    vector<int> nums = {5, 3, 8, 4, 2, 7, 1, 6};  
+    Solution s;
+    int min = s.minNumberInRotateArray(nums);  
+    cout << "min is: " << min << endl;  
+    cout << endl;  
+    return 0;  
+}

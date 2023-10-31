@@ -1,6 +1,15 @@
 /*
 数组中重复的数字
 */
+#include <iostream>
+#include <algorithm>  
+#include <string>  
+#include <vector>
+#include <set>
+#include <map>
+
+using namespace std;
+
 class Solution {
 public:
     /**
@@ -25,7 +34,7 @@ public:
 };
 
 // 方法2: set, map, 唯一性
- int duplicate(vector<int>& numbers) {
+ int duplicate1(vector<int>& numbers) {
         // write code here
         set<int> n_set;
         for(auto t:numbers){
@@ -35,7 +44,7 @@ public:
         return -1;
     }
 
-int duplicate(vector<int>& numbers) {
+int duplicate2(vector<int>& numbers) {
         // write code here
         map<int,int> list;
         for(int i=0;i<numbers.size();i++)
@@ -46,7 +55,7 @@ int duplicate(vector<int>& numbers) {
         return -1;
     }
 // 方法3：排序
-int duplicate(vector<int>& numbers) {
+int duplicate3(vector<int>& numbers) {
         // write code here
       sort(numbers.begin(),numbers.end());
       vector<int>::iterator it=adjacent_find(numbers.begin(),numbers.end());
@@ -57,3 +66,11 @@ int duplicate(vector<int>& numbers) {
           return *it;
       }
     }
+
+int main() {  
+    vector<int> nums = {5, 3, 8, 3, 2, 7, 1, 6};  
+    int rep_v =  duplicate3(nums);  
+    cout << "repeat value is: " << rep_v << endl; 
+    cout << endl;  
+    return 0;  
+}
