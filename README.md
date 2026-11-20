@@ -10,7 +10,6 @@ C++ 与 CUDA 学习代码。仓库只保留 `cpp` 和 `cuda`。
 
 ## cuda
 
-- `basic`：短例子，包括 `atomicAdd`、`atomicCAS`、`warpSize`、`saxpy`、`thrust`、`half`、pinned memory。
 - `cuda-sample`：随仓库保存的 CUDA Samples。
 - `cuda-samples`：NVIDIA 官方 CUDA Samples 子模块，当前检出 v11.4.1 附近。
 - `cuda-10.2`、`cuda-11.4`：对应版本的 CUDA 头文件。
