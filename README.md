@@ -1,4 +1,4 @@
-# AI Framework Basics
+# ai-framework-basics
 
 C++、CUDA 与 Python 对照学习 AI 框架的基础代码，重点是 PyTorch 各功能模块：从张量、自动求导、网络层，到数据、优化、CUDA 扩展和分布式。
 
@@ -42,5 +42,5 @@ C++、CUDA 与 Python 对照学习 AI 框架的基础代码，重点是 PyTorch 
 克隆时带子模块：
 
 ```bash
-git clone --recurse-submodules git@github.com:HangJie720/cxxtools.git
+git clone --recurse-submodules git@github.com:HangJie720/ai-framework-basics.git
 ```
