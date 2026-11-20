@@ -2,7 +2,7 @@
 
 C++, CUDA, and Python side by side for learning AI framework internals, with a focus on PyTorch: tensors, autograd, modules, data loading, optimizers, CUDA extensions, and distributed training.
 
-`cpp` and `cuda` are already here. `python` will be filled in by module so you can compare the same idea in the Python API, ATen/C++, and CUDA kernels.
+`cpp`, `cuda`, and `python` sit side by side so the same idea can be compared in the Python API, ATen/C++, and CUDA kernels. `python/distributed` is a set of 8-rank NCCL collective smoke tests.
 
 ## Learning path
 
@@ -34,10 +34,7 @@ C++, CUDA, and Python side by side for learning AI framework internals, with a f
 
 ## python
 
-Planned minimal runnable examples by PyTorch module:
-
-- `tensor`, `autograd`, `nn`, `optim`
-- `data`, `cuda`, `distributed`, `export`
+- `distributed`: 8-rank smoke tests for AllReduce, Broadcast, Reduce, AllGather, ReduceScatter, AlltoAll, Gather, and Scatter. Each case is documented in `python/distributed/README.md`.
 
 Clone with submodules:
 
