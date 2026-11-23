@@ -1,8 +1,6 @@
-# ai-framework-basics
+# cxx-basic-learning
 
-C++, CUDA, and Python side by side for learning AI framework internals, with a focus on PyTorch: tensors, autograd, modules, data loading, optimizers, CUDA extensions, and distributed training.
-
-`cpp`, `cuda`, and `python` sit side by side so the same idea can be compared in the Python API, ATen/C++, and CUDA kernels. `python/distributed` is a set of 8-rank NCCL collective smoke tests.
+C++ and CUDA materials for learning the foundations behind AI frameworks — systems code, CUDA kernels, and the C++ side of PyTorch-style stacks.
 
 ## Learning path
 
@@ -32,12 +30,8 @@ C++, CUDA, and Python side by side for learning AI framework internals, with a f
 - `CUDALibrarySamples`: Examples for cuBLASLt, cuFFT, cuSOLVER, cuSPARSE, NPP, nvJPEG, and related libraries — the building blocks behind PyTorch linear algebra and signal ops.
 - `DeepLearning-Training-Cuda`: cuDNN-based MNIST training sample that mirrors a CNN at the library level.
 
-## python
-
-- `distributed`: 8-rank smoke tests for AllReduce, Broadcast, Reduce, AllGather, ReduceScatter, AlltoAll, Gather, and Scatter. Each case is documented in `python/distributed/README.md`.
-
 Clone with submodules:
 
 ```bash
-git clone --recurse-submodules git@github.com:HangJie720/ai-framework-basics.git
+git clone --recurse-submodules git@github.com:HangJie720/cxx-basic-learning.git
 ```
