@@ -2,19 +2,6 @@
 
 C++ and CUDA materials for learning the foundations behind AI frameworks — systems code, CUDA kernels, and the C++ side of PyTorch-style stacks.
 
-## Learning path
-
-| Module | What to clarify | Python | C++ / CUDA |
-| --- | --- | --- | --- |
-| Tensor | Storage, stride, dtype, device, view vs copy | `torch.Tensor` | ATen `TensorImpl` |
-| Autograd | Forward recording, backward, `grad_fn`, custom `Function` | `torch.autograd` | `autograd::Function` |
-| NN | `Module`, parameter registration, `forward`, functional API | `torch.nn`, `torch.nn.functional` | ATen ops |
-| Optim / AMP | SGD, Adam, grad scaling, mixed precision | `torch.optim`, `torch.amp` | Matching kernels |
-| Data | `Dataset`, `DataLoader`, sampling and collation | `torch.utils.data` | — |
-| CUDA | Memory, streams, custom ops, library ops | `torch.cuda`, `torch.utils.cpp_extension` | Kernels and notes under `cuda/` |
-| Distributed | Process groups, allreduce, collective communication | `torch.distributed` | NCCL / communication libs |
-| Export | Trace, script, graph export | `torch.jit`, `torch.export` | — |
-
 ## cpp
 
 - `Cpp-Primer`: Exercises from *C++ Primer*, submodule [Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer).
