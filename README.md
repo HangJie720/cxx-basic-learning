@@ -14,7 +14,7 @@ C++ and CUDA materials for learning the foundations behind AI frameworks — sys
 - `cuda-samples`: Official NVIDIA CUDA Samples submodule, checked out around v11.4.1.
 - `cuda-10.2`, `cuda-11.4`: CUDA headers for the matching versions.
 - `CUDA-Programming`, `Learn-CUDA-Programming`, `Professional-CUDA-C-Programming`, `cudahandbook`: Book companion code for threads, memory, reductions, and concurrency.
-- `CUDALibrarySamples`: Examples for cuBLASLt, cuFFT, cuSOLVER, cuSPARSE, NPP, nvJPEG, and related libraries — the building blocks behind PyTorch linear algebra and signal ops.
+- `CUDALibrarySamples`: Examples for cuBLASLt, cuFFT, cuSOLVER, cuSPARSE, NPP, nvJPEG, cuDNN, and related libraries — the building blocks behind PyTorch linear algebra, signal, and convolution ops.
 - `DeepLearning-Training-Cuda`: cuDNN-based MNIST training sample that mirrors a CNN at the library level.
 
 Clone with submodules:

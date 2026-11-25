@@ -1,1 +1,10 @@
 .vscode/
+# cuDNN sample build / run outputs
+cuda/CUDALibrarySamples/cuDNN/**/conv2d_algo_precision
+cuda/CUDALibrarySamples/cuDNN/**/conv3d_algo_precision
+cuda/CUDALibrarySamples/cuDNN/**/summary*.json
+cuda/CUDALibrarySamples/cuDNN/**/report*.xlsx
+cuda/CUDALibrarySamples/cuDNN/**/golden/
+cuda/CUDALibrarySamples/cuDNN/**/out_golden/
+cuda/CUDALibrarySamples/cuDNN/**/results_resnet50/
+cuda/CUDALibrarySamples/cuDNN/**/*.bin

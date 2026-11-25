@@ -2,7 +2,8 @@
 
 CUDA Library Samples contains examples demonstrating the use of
 features in the math and image processing libraries cuBLAS, cuTENSOR,
-cuSPARSE, cuSOLVER, cuFFT, cuRAND, NPP and nvJPEG. 
+cuSPARSE, cuSOLVER, cuFFT, cuRAND, NPP, nvJPEG, and cuDNN
+(see [`cuDNN/`](cuDNN/) for convolution algorithm precision sweeps). 
 
 # About
 
